@@ -1,0 +1,33 @@
+[
+  {
+    "test-case": "Happy path",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": []
+  },
+  {
+    "test-case": "Alternate path, missing email and password",
+    "username": "",
+    "password": "",
+    "expected": [
+      "email: This field is required.",
+      "password: This field is required."
+    ]
+  },
+  {
+    "test-case": "Alternate path, invalid email",
+    "username": "user",
+    "password": "password",
+    "expected": [
+      "email: Please enter a proper email address"
+    ]
+  },
+  {
+    "test-case": "Alternate path, valid email, incorrect credentials",
+    "username": "username@email.com",
+    "password": "password",
+    "expected": [
+      "The email address or password you entered is incorrect."
+    ]
+  }
+]

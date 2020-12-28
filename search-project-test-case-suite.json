@@ -1,0 +1,27 @@
+[
+  {
+    "test-case": "Happy path, project name: West",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": [
+      "NoSuchElementException"
+    ],
+    "project-name": "West"
+  },
+  {
+    "test-case": "Happy path, project name: West 12-28-2020 14:12",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": [],
+    "project-name": "West 12-28-2020 14:12"
+  },
+  {
+    "test-case": "Alternate path, project name does not exist",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": [
+      "TimeoutException"
+    ],
+    "project-name": "NOPROJECTLOCATED"
+  }
+]

@@ -72,7 +72,7 @@ class TestCaseExecution(unittest.TestCase):
         password_element.send_keys(self.password)
         self.driver.find_element_by_xpath("//button[@type='submit']").click()
         try:
-            wait = WebDriverWait(self.driver, 2)
+            wait = WebDriverWait(self.driver, 10)
             wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@id='projects-page']")))
         except TimeoutException:
             try:
@@ -157,4 +157,4 @@ class TestCaseExecution(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="C:/Users/Adam/PycharmProjects/FsSeleniumTest"))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="results"))

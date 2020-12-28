@@ -22,8 +22,6 @@ class TestCaseExecution(unittest.TestCase):
                 self.create_driver()
                 self.login()
                 self.assertEqual(self.errors, self.expected)
-                print('Errors: ', self.errors)
-                print('Expected: ', self.expected)
                 if not self.errors:
                     self.logout()
                 self.driver.quit()

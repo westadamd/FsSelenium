@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2020-12-28 16:41:32</p>
+                <p class='attribute'><strong>Duration: </strong>41.54 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 3, Pass: 2, Fail: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestCaseExecution</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_1_login_and_logout</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td colspan="3">
+
+                                <table class='table table-hover table-responsive'>
+                                    <tbody>
+                                        <tr class='success'>
+                                            <td class="col-xs-10">test_1_login_and_logout [Happy path]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr class='success'>
+                                            <td class="col-xs-10">test_1_login_and_logout [Alternate path, missing email and password]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr class='success'>
+                                            <td class="col-xs-10">test_1_login_and_logout [Alternate path, invalid email]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr class='success'>
+                                            <td class="col-xs-10">test_1_login_and_logout [Alternate path, valid email, incorrect credentials]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_2_create_project</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td colspan="3">
+
+                                <table class='table table-hover table-responsive'>
+                                    <tbody>
+                                        <tr class='success'>
+                                            <td class="col-xs-10">test_2_create_project [Happy path]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr class='success'>
+                                            <td class="col-xs-10">test_2_create_project [Alternate path, missing project name]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_3_search_project</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td colspan="3">
+
+                                <table class='table table-hover table-responsive'>
+                                    <tbody>
+                                        <tr class='danger'>
+                                            <td class="col-xs-10">test_3_search_project [Happy path, project name: West]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                                <button class="btn btn-default btn-xs">View</button>
+                                            </td>
+                                        </tr>
+                                        <tr style="display:none;">
+                                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'West 12-28-2020 14:12' != 'West'
+- West 12-28-2020 14:12
++ West
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "main.py", line 56, in test_3_search_project
+    self.search_project()
+  File "main.py", line 154, in search_project
+    self.assertEqual(project_name_from_search, self.project_name)
+AssertionError: 'West 12-28-2020 14:12' != 'West'
+- West 12-28-2020 14:12
++ West
+
+main.py:146: DeprecationWarning: Please use assertEqual instead.
+  self.assertEquals(self.errors, self.expected)
+</p>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr class='danger'>
+                                            <td class="col-xs-10">test_3_search_project [Happy path, project name: West 12-28-2020 14:12]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                                <button class="btn btn-default btn-xs">View</button>
+                                            </td>
+                                        </tr>
+                                        <tr style="display:none;">
+                                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: Lists differ: ['TimeoutException'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'TimeoutException'
+
+- ['TimeoutException']
++ []</p><p style="color:maroon;">Traceback (most recent call last):
+  File "main.py", line 142, in search_project
+    wait.until(
+  File "C:\Users\Adam\PycharmProjects\FsSeleniumTest\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 56, in test_3_search_project
+    self.search_project()
+  File "main.py", line 146, in search_project
+    self.assertEquals(self.errors, self.expected)
+AssertionError: Lists differ: ['TimeoutException'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'TimeoutException'
+
+- ['TimeoutException']
++ []
+main.py:146: DeprecationWarning: Please use assertEqual instead.
+  self.assertEquals(self.errors, self.expected)
+</p>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr class='success'>
+                                            <td class="col-xs-10">test_3_search_project [Alternate path, project name does not exist]</td>
+                                            <td class="col-xs-1">
+                                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                                            </td>
+                                            <td class="col-xs-1">
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 2, Fail: 1 -- Duration: 41.54 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

@@ -1,0 +1,83 @@
+[
+  {
+    "test-case-group": "Login and Logout",
+    "test-case": "Happy path",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": []
+  },
+  {
+    "test-case-group": "Login and Logout",
+    "test-case": "Alternate path, missing email and password",
+    "username": "",
+    "password": "",
+    "expected": [
+      "email: This field is required.",
+      "password: This field is required."
+    ]
+  },
+  {
+    "test-case-group": "Login and Logout",
+    "test-case": "Alternate path, invalid email",
+    "username": "user",
+    "password": "password",
+    "expected": [
+      "email: Please enter a proper email address"
+    ]
+  },
+  {
+    "test-case-group": "Login and Logout",
+    "test-case": "Alternate path, valid email, incorrect credentials",
+    "username": "username@email.com",
+    "password": "password",
+    "expected": [
+      "The email address or password you entered is incorrect."
+    ]
+  },
+  {
+    "test-case-group": "Create Project",
+    "test-case": "Happy path",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": [],
+    "project-name": "West 12-28-2020 14:12"
+  },
+  {
+    "test-case-group": "Create Project",
+    "test-case": "Alternate path, missing project name",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": [
+      "This field is required."
+    ],
+    "project-name": ""
+  },
+  {
+    "test-case-group": "Search for Project",
+    "test-case": "Happy path, project name: West",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": [
+      "NoSuchElementException"
+    ],
+    "project-name": "West"
+  },
+  {
+    "test-case-group": "Search for Project",
+    "test-case": "Happy path, project name: West 12-28-2020 14:12",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": [],
+    "project-name": "West 12-28-2020 14:12"
+  },
+  {
+    "test-case-group": "Search for Project",
+    "test-case": "Alternate path, project name does not exist",
+    "username": "larry.test@frogslayer.com",
+    "password": "P@ssword1",
+    "expected": [
+      "TimeoutException"
+    ],
+    "project-name": "NOPROJECTLOCATED"
+  }
+]

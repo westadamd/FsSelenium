@@ -6,6 +6,8 @@ Selenium Script and test case suites to test the following functionality:
 2 - Add project
 3 - Search the project that is created for step 2
 
+Reports will be generated and placed in the results directory. One example is located in this directory.
+
 Prerequirements:
 pip must be installed on the system to install the required packages
 https://pip.pypa.io/en/stable/installing/
